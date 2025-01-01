@@ -1,0 +1,94 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.display {
+  background-color: #222;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #0f0;
+  text-align: right;
+  font-size: 2rem;
+  padding: 20px;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.key {
+  height: 60px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.key:hover {
+  background-color: #e0e0e0;
+}
+
+.key.operator {
+  background-color: #ff9500;
+  color: #fff;
+}
+
+.key.operator:hover {
+  background-color: #e38900;
+}
+
+.key.action {
+  background-color: #007aff;
+  color: #fff;
+}
+
+.key.action:hover {
+  background-color: #005bb5;
+}
+
+.key.action.ac {
+  background-color: #ff3b30;
+  color: #fff;
+}
+
+.key.action.ac:hover {
+  background-color: #d32f2f;
+}
+
+.key.action.delete {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.key.action.delete:hover {
+  background-color: #e08900;
+}
+
+.equals,
+.ac {
+  grid-column: span 2;
+  text-align: center;
+}
